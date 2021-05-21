@@ -19,7 +19,7 @@ export default function App() {
       <button onClick={() => setText("todos")}>TODOS</button>
       <h3>{text}</h3>
       {items.map((item, index) => {
-        return <h5 key={index}>{JSON.stringify(item)}</h5>;
+        return <pre key={index}>{JSON.stringify(item)}</pre>;
       })}
     </div>
   );
